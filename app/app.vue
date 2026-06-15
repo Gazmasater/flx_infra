@@ -5,13 +5,24 @@ useHead({
   link: [
     {
       rel: "icon",
-      type: "image/webp",
-      href: "/flyuxora-logo-mark.webp?v=2",
+      type: "image/x-icon",
+      href: "/favicon.ico?v=3",
     },
     {
       rel: "shortcut icon",
-      type: "image/webp",
-      href: "/flyuxora-logo-mark.webp?v=2",
+      type: "image/x-icon",
+      href: "/favicon.ico?v=3",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/favicon-32x32.png?v=3",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/apple-touch-icon.png?v=3",
     },
   ],
 });
