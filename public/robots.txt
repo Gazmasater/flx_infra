@@ -1,2 +1,5 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+Host: https://flyuxora.ru
+Sitemap: https://flyuxora.ru/sitemap.xml
