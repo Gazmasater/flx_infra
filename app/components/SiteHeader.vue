@@ -1,9 +1,9 @@
 <template>
   <header class="topbar topbar-premium">
     <div class="topbar-main">
-      <NuxtLink to="/" class="brand" aria-label="Главная">
-        <span class="brand-mark">F</span>
-        <span>{{ company.brand }}</span>
+      <NuxtLink to="/" class="brand brand-logo" aria-label="Главная">
+        <img src="/flyuxora-logo-mark.webp" alt="Flyuxora" class="brand-logo__mark">
+        <span class="brand-logo__text">Flyuxora</span>
       </NuxtLink>
 
       <nav class="nav" aria-label="Разделы сайта">
