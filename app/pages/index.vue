@@ -6,6 +6,7 @@ useHead({
 
 <template>
   <main class="home-clean">
+    <HeroSection />
     <section class="home-clean-hero">
       <div>
         <p class="eyebrow">Информационно-технологический сервис</p>
