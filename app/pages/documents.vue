@@ -8,6 +8,18 @@ useHead({
     },
   ],
 });
+
+const docs = [
+  { title: "Публичная оферта", to: "/offer" },
+  { title: "Правила сервиса", to: "/service-rules" },
+  { title: "Политика конфиденциальности", to: "/privacy" },
+  { title: "Согласие на обработку ПДн", to: "/personal-data-consent" },
+  { title: "AML/KYC Policy", to: "/aml-kyc" },
+  { title: "Уведомление о рисках", to: "/risk-disclaimer" },
+  { title: "Политика возвратов", to: "/refund-policy" },
+  { title: "Cookies", to: "/cookies" },
+];
+
 </script>
 
 <template>
