@@ -7,29 +7,6 @@ useHead({
 <template>
   <main class="home-clean">
     <HeroSection />
-    <section class="home-clean-hero">
-      <div>
-        <p class="eyebrow">Информационно-технологический сервис</p>
-        <h1>Обработка заявок, данных и интеграций</h1>
-        <p>
-          Сервис помогает принимать заявки, согласовывать стоимость до оплаты,
-          проводить необходимые проверки, оформлять документы и формировать счёт ЮKassa.
-        </p>
-
-        <div class="home-clean-actions">
-          <a href="#payment" class="primary-button">Оставить заявку</a>
-          <NuxtLink to="/documents" class="secondary-button">Документы</NuxtLink>
-        </div>
-      </div>
-
-      <aside class="home-clean-panel" aria-label="Краткий порядок работы">
-        <div><span>Заявка</span><strong>принимается</strong></div>
-        <div><span>Стоимость</span><strong>согласуется</strong></div>
-        <div><span>Документы</span><strong>до оплаты</strong></div>
-        <div><span>Счёт ЮKassa</span><strong>после согласования</strong></div>
-      </aside>
-    </section>
-
     <section class="home-clean-section">
       <div class="home-clean-head">
         <div>
