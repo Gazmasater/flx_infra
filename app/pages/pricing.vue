@@ -1,8 +1,8 @@
 <template>
   <main class="page">
     <section class="page-hero">
-      <p class="eyebrow">Стоимость</p>
-      <h1>Стоимость согласуется до оплаты</h1>
+      <p class="eyebrow">Цены</p>
+      <h1>Стоимость и оплата</h1>
       <p>
         Итоговая сумма определяется индивидуально и указывается в счёте ЮKassa
         до совершения платежа.
@@ -19,9 +19,9 @@
       </div>
     </section>
 
-    <section class="page-note">
-      <h2>Важно</h2>
-      <p>
+    <section class="page-note page-note--accent">
+      <p class="page-note__label">Важно</p>
+      <p class="page-note__text">
         Оплата производится только после согласования заявки. Пользователь заранее
         видит условия, сумму и документы сервиса.
       </p>

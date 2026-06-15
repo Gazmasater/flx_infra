@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: flyuxora
+
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service-lb.yaml
+
+# Pinned to the pushed image by immutable digest.
+images:
+  - name: docker.io/prorobotech/flyuxora
+    digest: sha256:b1666f66a9647a550b977421dac2059ec5c9e1f916cefccb77952dbc6170c1dd

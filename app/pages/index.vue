@@ -13,7 +13,7 @@ useHead({
 <template>
   <main class="home-clean">
     <HeroSection />
-    <section class="home-clean-section">
+    <section class="home-clean-section home-clean-panel">
       <div class="home-clean-head">
         <div>
           <p class="eyebrow">Услуги</p>
@@ -23,16 +23,31 @@ useHead({
       </div>
 
       <div class="home-clean-grid">
-        <article>
-          <h3>Обработка заявок</h3>
+        <article class="icon-card">
+          <div class="icon-card__head">
+            <span class="card-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12l3-7h12l3 7v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 12h5l1 2h6l1-2h5"/></svg>
+            </span>
+            <h3>Обработка заявок</h3>
+          </div>
           <p>Приём, регистрация, уточнение и сопровождение пользовательских заявок.</p>
         </article>
-        <article>
-          <h3>Интеграции</h3>
+        <article class="icon-card">
+          <div class="icon-card__head">
+            <span class="card-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 15l6-6"/><path d="M11 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M13 18l-1 1a4 4 0 0 1-6-6l1-1"/></svg>
+            </span>
+            <h3>Интеграции</h3>
+          </div>
           <p>API, CRM, Telegram-боты, формы, уведомления и технические связки.</p>
         </article>
-        <article>
-          <h3>AML/KYC</h3>
+        <article class="icon-card">
+          <div class="icon-card__head">
+            <span class="card-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <h3>AML/KYC</h3>
+          </div>
           <p>Проверка заявки, оценка риска и запрос дополнительных сведений при необходимости.</p>
         </article>
       </div>
@@ -68,7 +83,7 @@ useHead({
         <p class="eyebrow">Документы и реквизиты</p>
         <h2>Условия доступны до оплаты</h2>
         <p>
-          Оферта, AML/KYC Policy, документы по персональным данным, риски,
+          Оферта, Политика AML/KYC, документы по персональным данным, риски,
           возврат, правила сервиса и реквизиты доступны на отдельных страницах.
         </p>
       </div>

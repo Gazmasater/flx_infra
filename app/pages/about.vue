@@ -2,7 +2,7 @@
   <main class="page">
     <section class="page-hero">
       <p class="eyebrow">Официальная информация</p>
-      <h1>Реквизиты исполнителя</h1>
+      <h1>Реквизиты</h1>
       <p>
         Информация об исполнителе, контактные данные и юридические сведения сервиса.
       </p>
@@ -23,7 +23,7 @@
           <dd>326480000028445</dd>
         </div>
         <div>
-          <dt>Email</dt>
+          <dt>Эл. почта</dt>
           <dd><a href="mailto:tolkoplus@gmail.com">tolkoplus@gmail.com</a></dd>
         </div>
         <div>
@@ -33,9 +33,9 @@
       </dl>
     </section>
 
-    <section class="page-note">
-      <h2>Статус сервиса</h2>
-      <p>
+    <section class="page-note page-note--accent">
+      <p class="page-note__label">Статус сервиса</p>
+      <p class="page-note__text">
         Сервис оказывает информационно-технологические услуги и не является банком,
         кредитной организацией, брокером, инвестиционной платформой, биржей или
         оператором платёжной системы.

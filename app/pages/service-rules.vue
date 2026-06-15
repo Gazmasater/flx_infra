@@ -8,7 +8,7 @@ useHead({
 
 <template>
   <main class="legal-page">
-    <NuxtLink class="legal-back" to="/">← На главную</NuxtLink>
+    <BackLink />
 
     <article class="legal-card">
       <p class="eyebrow">Документ</p>
