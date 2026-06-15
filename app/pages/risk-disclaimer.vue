@@ -2,17 +2,17 @@
 import { company } from "~/data/company";
 
 useHead({
-  title: "Risk Disclaimer",
+  title: "Уведомление о рисках | Flyuxora",
 });
 </script>
 
 <template>
   <main class="legal-page">
-    <NuxtLink class="legal-back" to="/">← На главную</NuxtLink>
+    <BackLink />
 
     <article class="legal-card">
       <p class="eyebrow">Документ</p>
-      <h1>Risk Disclaimer</h1>
+      <h1>Уведомление о рисках</h1>
       <h2>1. Информационно-технологический характер сервиса</h2>
       <p>Сервис носит информационно-технологический характер. Исполнитель не является банком, кредитной организацией, оператором платёжной системы, брокером, инвестиционной платформой или биржей.</p>
       <h2>2. Самостоятельная ответственность пользователя</h2>
@@ -28,7 +28,7 @@ useHead({
       <p>{{ company.fullLegalName }}</p>
       <p>ИНН: {{ company.inn }}</p>
       <p>ОГРНИП: {{ company.ogrnip }}</p>
-      <p>Email: <a :href="`mailto:${company.email}`">{{ company.email }}</a></p>
+      <p>Эл. почта: <a :href="`mailto:${company.email}`">{{ company.email }}</a></p>
     </article>
   </main>
 </template>

@@ -19,7 +19,7 @@
 
       <NuxtLink to="/aml-kyc" class="document-card">
         <span>02</span>
-        <h3>AML/KYC Policy</h3>
+        <h3>Политика AML/KYC</h3>
         <p>Порядок проверки пользователей, заявок и оценки риска.</p>
       </NuxtLink>
 

@@ -2,17 +2,17 @@
 import { company } from "~/data/company";
 
 useHead({
-  title: "Cookies Policy",
+  title: "Политика Cookies",
 });
 </script>
 
 <template>
   <main class="legal-page">
-    <NuxtLink class="legal-back" to="/">← На главную</NuxtLink>
+    <BackLink />
 
     <article class="legal-card">
       <p class="eyebrow">Документ</p>
-      <h1>Cookies Policy</h1>
+      <h1>Политика Cookies</h1>
       <h2>1. Общие положения</h2>
       <p>Настоящая Политика определяет порядок использования файлов cookies и аналогичных технологий на сайте Исполнителя. Продолжая использование сайта, Пользователь подтверждает согласие на использование cookies.</p>
       <h2>2. Что такое cookies</h2>

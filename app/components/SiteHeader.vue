@@ -2,7 +2,7 @@
   <header class="topbar topbar-premium">
     <div class="topbar-main">
       <NuxtLink to="/" class="brand brand-logo" aria-label="Главная">
-        <img src="/flyuxora-logo-mark.webp" alt="Flyuxora" class="brand-logo__mark">
+        <img src="/flyuxora-logo-mark.webp" alt="Flyuxora" class="brand-logo__mark" width="38" height="38">
         <span class="brand-logo__text">Flyuxora</span>
       </NuxtLink>
 
