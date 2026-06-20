@@ -9,7 +9,6 @@ const form = reactive({
   middleName: '',
   contact: '',
   amount: '',
-  comment: '',
   offerAccepted: false,
 })
 
@@ -36,7 +35,6 @@ const submit = async () => {
         middleName: form.middleName,
         contact: form.contact,
         amount: Number(form.amount),
-        comment: form.comment,
 
         offerAccepted: form.offerAccepted,
         offerVersion: '2026-06-12',
@@ -51,13 +49,13 @@ const submit = async () => {
     })
 
     if (!result.invoiceUrl) {
-      errorMessage.value = 'Ссылка на счёт не получена.'
+      errorMessage.value = 'Ссылка на оплату через СБП не получена.'
       return
     }
 
     reachPaymentRequestCreatedGoal(result.invoiceUrl)
   } catch (e) {
-    errorMessage.value = 'Не удалось создать счёт. Попробуйте ещё раз.'
+    errorMessage.value = 'Не удалось создать оплату через СБП. Попробуйте ещё раз.'
   } finally {
     loading.value = false
   }
@@ -106,14 +104,14 @@ const reachPaymentRequestCreatedGoal = (redirectUrl: string) => {
 <template>
   <section id="payment" class="lead">
     <div class="lead__cta">
-      <h2 class="lead__title">Заявка и счёт на оплату</h2>
+      <h2 class="lead__title">Заявка и оплата через СБП</h2>
 
       <p class="lead__text">
-        Оставьте заявку — после согласования будет сформирован счёт ЮKassa для оплаты.
+        Оставьте заявку — после согласования будет создана ссылка ЮKassa на оплату только через СБП.
       </p>
 
       <button type="button" class="lead__btn" @click="isOpen = true">
-        Запросить счёт
+        Оплатить через СБП
       </button>
     </div>
 
@@ -124,11 +122,11 @@ const reachPaymentRequestCreatedGoal = (redirectUrl: string) => {
         </button>
 
         <h3 id="lead-modal-title" class="lead-modal__title">
-          Данные для оформления счёта
+          Данные для оплаты через СБП
         </h3>
 
         <p class="lead-modal__note">
-          После нажатия кнопки будет создан счёт ЮKassa, а данные заявки и эл. почта для чека будут сохранены.
+          После нажатия кнопки будет создана ссылка ЮKassa с единственным способом оплаты — СБП. Эл. почта нужна для отправки чека.
         </p>
 
         <form class="lead-form" @submit.prevent="submit">
@@ -178,12 +176,6 @@ const reachPaymentRequestCreatedGoal = (redirectUrl: string) => {
             class="lead-input"
           >
 
-          <textarea
-            v-model="form.comment"
-            placeholder="Комментарий"
-            class="lead-input"
-          ></textarea>
-
           <label class="lead-consent">
             <input
               v-model="form.offerAccepted"
@@ -191,7 +183,7 @@ const reachPaymentRequestCreatedGoal = (redirectUrl: string) => {
               type="checkbox"
             >
             <span>
-              Нажимая «Запросить счёт», я подтверждаю, что ознакомлен и согласен с
+              Нажимая «Оплатить через СБП», я подтверждаю, что ознакомлен и согласен с
               <a href="/offer" target="_blank">публичной офертой</a>,
               <a href="/service-rules" target="_blank">правилами сервиса</a>,
               <a href="/privacy" target="_blank">политикой обработки персональных данных</a>,
@@ -212,7 +204,7 @@ const reachPaymentRequestCreatedGoal = (redirectUrl: string) => {
             :disabled="loading"
             class="lead__btn lead-submit"
           >
-            {{ loading ? 'Создаём счёт...' : 'Запросить счёт' }}
+            {{ loading ? 'Создаём оплату СБП...' : 'Оплатить через СБП' }}
           </button>
         </form>
       </div>
